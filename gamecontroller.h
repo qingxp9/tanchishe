@@ -38,7 +38,7 @@ private:
     QGraphicsScene &scene;
     Snake *snake;
     Wall  *wall;       //储存wall的位置
-    bool   ok=1;        //用于处理gameover 和 addnewfood中的 clear和removeitem
+    bool   ok;        //用于处理gameover 和 addnewfood中的 clear和removeitem
 };
 
 #endif // GAMECONTROLLER_H

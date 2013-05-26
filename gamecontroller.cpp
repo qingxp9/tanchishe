@@ -12,7 +12,8 @@ GameController::GameController(QGraphicsScene &scene, QObject *parent) :
     QObject(parent),
     scene(scene),
     snake(new Snake(*this)),
-    wall(new Wall(30,40))
+    wall(new Wall(30,40)),
+    ok(1)
 {
     timer.start( 1000/33 );
 
