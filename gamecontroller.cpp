@@ -15,7 +15,7 @@ GameController::GameController(QGraphicsScene &scene, QObject *parent) :
     wall(new Wall(30,40)),
     ok(1)
 {
-    timer.start( 1000/33 );
+    timer.start( 30 );
 
     Food *a1 = new Food(0,-50);
     scene.addItem(a1);

@@ -3,7 +3,7 @@
 #include "constants.h"
 #include "wall.h"
 
-static const  qreal WALL_SIZE = 8;
+static const  qreal WALL_RADIUS = 4;
 
 Wall::Wall(qreal x, qreal y )
 {
@@ -30,7 +30,8 @@ void Wall ::paint (QPainter  *painter, const  QStyleOptionGraphicsItem *, QWidge
 QPainterPath Wall ::shape () const
 {
     QPainterPath p;
-    p.addRect (1,1,WALL_SIZE,WALL_SIZE);
+    p.addEllipse (QPointF(TILE_SIZE  / 2, TILE_SIZE / 2), WALL_RADIUS,
+    WALL_RADIUS);
     return p;
 }
 
