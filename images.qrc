@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="food">images/food.jpg</file>
+        <file alias="splash">images/splash.jpg</file>
+    </qresource>
+</RCC>

@@ -23,7 +23,7 @@ void Food ::paint (QPainter  *painter, const  QStyleOptionGraphicsItem *, QWidge
     painter->save();
 
     painter->setRenderHint (QPainter ::Antialiasing); //反走样
-    painter->fillPath (shape (),  Qt::red );
+    painter->fillPath (shape (),  QPixmap(":/images/food") );
 
     painter->restore();
 }

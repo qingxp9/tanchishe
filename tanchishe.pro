@@ -25,3 +25,9 @@ HEADERS  += mainwindow.h \
     constants.h \
     snake.h \
     wall.h
+
+QMAKE_LFLAGS += -static
+
+RESOURCES += \
+    images.qrc
+

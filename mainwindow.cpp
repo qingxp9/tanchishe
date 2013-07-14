@@ -13,7 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
         setCentralWidget (view);
         resize (600 , 600 );
-
         initScene();
         initSceneBackground();
 
@@ -39,7 +38,7 @@ void MainWindow::initSceneBackground()
 {
     QPixmap bg (TILE_SIZE, TILE_SIZE );
     QPainter  p(&bg);
-        p.setBrush (QBrush(Qt::gray));
+        p.setBrush (QBrush(Qt::cyan));
         p.drawRect (0, 0, TILE_SIZE , TILE_SIZE );
 
         view->setBackgroundBrush (QBrush(bg));
