@@ -92,7 +92,9 @@ void GameController::addNewFood()
     } while (snake->shape().contains(snake->mapFromScene(QPointF(a + 5, b + 5))) || QPointF(x,y) == QPoint(a,b));
 
     if(ok)
-   { scene.removeItem(wall);}
+   {
+        scene.removeItem(wall);
+    }
     wall =new Wall(a , b);
     scene.addItem(wall);
 }
